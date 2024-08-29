@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Lista productos tecnología
+{% endblock %}
+
+{% block contenido %}
+
+    <div class="container">
+
+        <div class="mt-3">
+            <h1 class="text-center">👩🏻‍💻👨🏻‍💻🧑🏻‍💻💻💻 Pagina de Productos Tecnología 💻💻 🧑🏻‍💻👨🏻‍💻👩🏻‍💻</h1>
+            
+
+        <div class="card">
+            <div class="card-header">
+                <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Agregar nuevo
+                    producto 🧊 </a>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Listas de productos: </h4>
+                <div class="table-responsive">
+                    <table class="table table-primary">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Stock</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {% for producto in productos %}
+
+                            <tr class="">
+                                <td scope="row">{{ producto.id_producto }}</td>
+                                <td>{{ producto.nombre }}</td>
+                                <td>
+                                    <img src="{{ producto.imagen.url }}" height="100">
+                                </td>
+                                <td>{{ producto.precio}}</td>
+                                <td>{{ producto.descripcion }}</td>
+                                <td>{{ producto.stock }}</td>
+                                <td>
+                                    <a name="" id="" class="btn btn-info" href="{% url 'editar' producto.id_producto %}"
+                                        role="button">Editar</a>
+                                </td>
+                                <td>
+                                    <a name="" id="" class="btn btn-danger"
+                                        href="{% url 'eliminar' producto.id_producto %}" role="button">Eliminar</a>
+                                </td>
+                            </tr>
+
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="card-footer text-muted">
+                <footer>
+                    <p>
+                        &copy; 2024. Todos los derechos reservados.
+                        <a href="{% url 'inicio' %}">Home</a> |
+                        <a href="{% url 'nosotros' %}">Nosotros</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

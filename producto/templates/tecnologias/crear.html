@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Agregar nueva nuevo contenido de tecnología
+{% endblock %}
+
+{% block contenido %}
+<div class="container mt-3">
+    <h1 class="text-center">👩🏻‍💻👨🏻‍💻🧑🏻‍💻💻💻 Producto 💻💻 🧑🏻‍💻👨🏻‍💻👩🏻‍💻</h1>
+    <div class="card">
+        <div class="card-header">
+            Crear un producto 🧊
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Descripción del producto</h4>
+            <!-- include -->
+            {% include 'tecnologias/form.html' %}
+    
+        </div>
+        <div class="card-footer text-muted">
+            <a href="{% url 'index' %}">Volver al listado</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

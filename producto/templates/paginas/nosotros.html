@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Nosotros
+{% endblock %}
+
+{% block contenido %}
+<!-- Contenido Nosotros -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-center">Conócenos</h1>
+            <p class="lead">
+                Somos un equipo apasionado de ingenieros y expertos en ciberseguridad. Nuestra misión es proteger a
+                nuestros clientes en el mundo digital, brindando soluciones robustas y confiables.
+            </p>
+            <p>
+                Trabajamos incansablemente para mantener la seguridad de tus datos y sistemas. Desde la prevención de
+                ataques hasta la detección temprana de vulnerabilidades, estamos aquí para ti.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/free-photo/portrait-male-engineer-working-field-engineers-day-celebration_23-2151615114.jpg?t=st=1723097058~exp=1723100658~hmac=f66717d976973209d2e6d640c3995150d438ee83e9c0f47b7a7dc42f472a9e81&w=800"
+                            class="d-block mx-auto img-fluid" alt="Equipo de ingenieros" />
+                        <div class="carousel-caption">
+                            <p>Trabajando juntos en el campo para celebrar el Día de los Ingenieros.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/cyber-security-experts-working-with-tech-devices-neon-lights_23-2151645648.jpg?ga=GA1.1.1411894020.1715051574&semt=ais_hybrid"
+                            class="d-block mx-auto img-fluid" alt="Expertos en ciberseguridad" />
+                        <div class="carousel-caption">
+                            <p>Sumergidos en la seguridad cibernética con luces de neón.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/cyber-security-experts-working-with-tech-devices-neon-lights_23-2151645643.jpg?t=st=1723097373~exp=1723100973~hmac=f3f1e2047340cb7f849ee7412aff66b67c45102a83e31bcd52670e0bbca59289&w=740"
+                            class="d-block mx-auto img-fluid" alt="Equipo de seguridad informática" />
+                        <div class="carousel-caption">
+                            <p>Trabajando en soluciones para proteger a nuestros clientes en el mundo digital.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Contenido Nosotros -->
+
+{% endblock %}

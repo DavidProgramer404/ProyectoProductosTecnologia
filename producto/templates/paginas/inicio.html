@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Inicio | Page
+{% endblock %}
+
+{% block contenido %}
+<!-- Hero Section -->
+<div class="p-5 bg-light">
+    <div class="container">
+        <div class="h-100 p-5 text-white bg-primary border rounded-3">
+            <h2>Bienvenidos Al sitio de Tecnología</h2>
+            <p>
+                Empezar a ingresar productos
+            </p>
+            <a class="btn btn-info btn-lg" href="{% url 'tecnologia' %}"role="button">Empezar</a>
+        </div>
+    </div>
+</div>
+
+<!-- Additional Content -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'img/img1.jpg' %}" class="card-img-top" alt="Imagen 1">
+                <div class="card-body">
+                    <h5 class="card-title">Últimas Noticias</h5>
+                    <p class="card-text">Mantente actualizado con las últimas noticias en tecnología.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'img/img2.jpg' %}" class="card-img-top" alt="Imagen 2">
+                <div class="card-body">
+                    <h5 class="card-title">Nuevos Productos</h5>
+                    <p class="card-text">Descubre los últimos productos añadidos a nuestro catálogo.</p>
+                    <a href="#" class="btn btn-primary">Ver productos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'img/img3.jpg' %}" class="card-img-top" alt="Imagen 3">
+                <div class="card-body">
+                    <h5 class="card-title">Ofertas Especiales</h5>
+                    <p class="card-text">Aprovecha nuestras ofertas y descuentos exclusivos en nuestro catalogo.</p>
+                    <a href="#" class="btn btn-primary">Ver ofertas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo apasionado por la tecnología, dedicado a ofrecer las últimas novedades y productos
+                innovadores en el mercado. Nuestro objetivo es brindar a nuestros clientes una experiencia única y
+                satisfactoria.</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
