@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'sistema.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db_sistema_productos',
-        'USER': 'postgres',
-        'PASSWORD': 'sa654321',
+        'NAME': '........',
+        'USER': '.....',
+        'PASSWORD': '.....',
         'HOST': 'localhost',
         'PORT': '5432',
     }
